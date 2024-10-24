@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Students Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Students Data</h1>
+    <div class="student-container" id="studentContainer">
+      <div class="student add-student">
+        <button id="addStudentBtn">+ Add New Student</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="studentModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modalTitle">Add New Student</h2>
+      <form id="studentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        <label for="imageUrl">Image URL:</label>
+        <input type="url" id="imageUrl" required>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
